@@ -1,0 +1,24 @@
+<div class="p-4 space-y-2 bg-white rounded-lg shadow-md">
+  <h2 class="text-2xl font-bold">{{ model.author.name }}</h2>
+  <p><strong>Age:</strong> {{ model.author.age }}</p>
+  <p>
+    <strong>Website:</strong>
+    <a [href]="model.author.website" class="text-blue-600">
+      {{ model.author.website }}
+    </a>
+  </p>
+  <p><strong>Biography:</strong></p>
+  <p class="pl-2">{{ model.author.biography }}</p>
+  <div>
+    <h3 class="font-semibold">Books</h3>
+    <ul class="list-disc list-inside pl-4">
+      <li *ngFor="let book of model.author.books">{{ book }}</li>
+    </ul>
+  </div>
+  <div>
+    <h3 class="font-semibold">Awards</h3>
+    <ul class="list-disc list-inside pl-4">
+      <li *ngFor="let award of model.author.awards">{{ award }}</li>
+    </ul>
+  </div>
+</div>
