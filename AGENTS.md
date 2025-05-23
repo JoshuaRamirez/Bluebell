@@ -1,7 +1,7 @@
 # Codex Agent Guide
 
 ## Scope
-Work only in `apps/admin` and `libs/ui/*`.
+Work in `src/app` and `libs/ui/*`.
 
 ## Lint/Test
 - Run lint: `pnpm lint`
