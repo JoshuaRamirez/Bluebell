@@ -1,0 +1,21 @@
+<ul class="book-tree">
+  <ng-container *ngTemplateOutlet="tree; context: { nodes: model.tree }"></ng-container>
+</ul>
+
+<ng-template #tree let-nodes="nodes">
+  <ng-container *ngFor="let node of nodes; trackBy: trackByTitle">
+    <li>
+      <div
+        (click)="interactions.onNodeClick(node)"
+        [class.cursor-pointer]="node.children"
+        class="select-none"
+      >
+        <span *ngIf="node.children" class="pr-1">{{ node.expanded ? '-' : '+' }}</span>
+        {{ node.title }}
+      </div>
+      <ul *ngIf="node.children && node.expanded" class="pl-4">
+        <ng-container *ngTemplateOutlet="tree; context: { nodes: node.children }"></ng-container>
+      </ul>
+    </li>
+  </ng-container>
+</ng-template>
