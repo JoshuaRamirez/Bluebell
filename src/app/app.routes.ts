@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { SplashScreenComponent } from './screens/splash-screen/SplashScreen.Component';
-import { ProfilePageComponent } from './screens/profile-page/ProfilePage.Component';
-import { BooksScreenComponent } from './screens/books-screen/BooksScreen.Component';
+import { SplashScreenComponent } from './screens/SplashScreen/SplashScreen.Component';
+import { ProfilePageComponent } from './screens/ProfilePage/ProfilePage.Component';
+import { BooksScreenComponent } from './screens/BooksScreen/BooksScreen.Component';
 
 export const routes: Routes = [
   {
