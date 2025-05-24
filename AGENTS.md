@@ -1,15 +1,14 @@
 # Codex Agent Guide
 
-## Scope
-Work in `src/app` and `libs/ui/*`.
 
-## Lint/Test
-- Run lint: `pnpm lint`
-- Run tests: `pnpm test`
+## Tests Instructions
+- Run build: `npm run build`
+- Run lint: `npm run lint`
+- Run tests: `npm run test`
 
 ## PR Instructions
-- PR title format: `[admin] <summary>`
+- PR title format: `[Codex] <summary>`
 - Include a summary section with rationale and before/after behavior
 
 ## Notes
-All code changes must pass lint and type checks.
+All code changes must pass build, lint, unit tests, and type checks.
